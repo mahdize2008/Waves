@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog 1</title>
+  <link rel="stylesheet" href="assets/css/Select2/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- SATRT-MENU -->
+  <div class="menu-modal fixed top-0 start-0 h-full w-[270px] bg-primary-dark z-[99] p-4 overflow-y-auto"
+    style="display: none">
+    <div class="flex items-center justify-between pb-4 mb-4 border-b-2 border-solid border-white border-opacity-10">
+      <a href="">
+        <img src="./assets/img/logo.png" class="max-w-[150px]" />
+      </a>
+      <div class="close-menu-modal btn-public btn-primary-light uppercase">
+        close
+      </div>
+    </div>
+    <ul class="block">
+      <li class="group relative">
+        <a class="text-white text-base uppercase py-2 relative flex items-center" href="index.html">
+          HOME
+        </a>
+      </li>
+      <li class="group relative">
+        <a class="text-white text-base uppercase py-2 relative flex items-center" href="about-us.html">
+          ABOUT
+        </a>
+      </li>
+      <li class="group relative">
+        <a class="text-white text-base uppercase py-2 relative flex items-center">
+          SERVICES
+          <i
+            class="icon-down w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto block group-hover:hidden"></i>
+          <i
+            class="icon-up w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto hidden group-hover:flex"></i>
+        </a>
+        <ul class="sub-menu-1 relative transition-all ps-8 hidden group-hover:block bg-primary-dark-alpha -mx-4">
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Network-infrastructure.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Network Infrastructure Services and Solutions
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Computer Network Services and Solutions
+            </a>
+            <ul class="sub-menu-2 relative ps-4 ms-2">
+              <li class="!list-disc text-white">
+                <a href="Consulting-design-implementation.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Consulting, Network Design and Implementation
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="NetworkSupport-maintenance.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Network Support and Maintenance
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="Voip.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  VoIP
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Cyber Security Services and Solutions
+            </a>
+            <ul class="sub-menu-2 relative ps-4 ms-2">
+              <li class="!list-disc text-white">
+                <a href="Network-security.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Network Security
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="Pen-test.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Penetration Test
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="SOC.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  SOC
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="ISMS.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  ISMS
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="virtualization.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Virtualization Services and Solutions
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white">
+            <a href="cloud.html" class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Cloud Computing
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Data-center.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Data Center
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="group relative">
+        <a class="text-white text-base uppercase py-2 relative flex items-center">
+          PRODUCTS
+          <i
+            class="icon-down w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto block group-hover:hidden"></i>
+          <i
+            class="icon-up w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto hidden group-hover:flex"></i>
+        </a>
+        <ul class="sub-menu-1 relative transition-all ps-8 hidden group-hover:block bg-primary-dark-alpha -mx-4">
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Rack
+            </a>
+            <ul class="sub-menu-2 relative ps-4 ms-2">
+              <li class="!list-disc text-white">
+                <a href="High-Capacity-Distribution-Rack.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  High Capacity Distribution Rack
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="DDF-OCDF-DDF-RACK.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  ODF/OCDF/ DDF Rack
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="ODC-Rack.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  ODC RACK
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Ladder
+            </a>
+            <ul class="sub-menu-2 relative ps-4 ms-2">
+              <li class="!list-disc text-white">
+                <a href="NEC-ladder.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  NEC Ladder
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="Siemens-ladder.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Siemens Ladder
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Pigtail & Patch Cord Fiber Optic /Adapter
+            </a>
+            <ul class="sub-menu-2 relative ps-4 ms-2">
+              <li class="!list-disc text-white">
+                <a href="Pigtail-PatchCord.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Pigtail & Patch Cord
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="FiberOptic-Adapter.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Fiber Optic Adapter
+                </a>
+              </li>
+              <li class="!list-disc text-white">
+                <a href="FiberOptic-Attenuator.html"
+                  class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+                  Fiber Optic Attenuator
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="ODF-OCDF-Wallmount.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              ODF/OCDF Wallmount
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="ODF-OCDF-Rackmount.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              ODF/OCDF Rackmount
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="ODF-DDF-Rackmount.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              ODF/DDF Rackmount
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Continuous-Duct-Rod.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Continuous-Duct Rod
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Fiber-optic-splice-closure.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Fiber Optic Splice Closure
+            </a>
+          </li>
+
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Splicing-Tools.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Splicing Tools
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Converter.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Converter
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="SubDuct-plug.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Sub Duct Plug & Feeder Cabe Entry
+            </a>
+          </li>
+          <li class="group/item relative !list-disc text-white mb-3">
+            <a href="Other-Products.html"
+              class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium">
+              Other Products
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="group relative">
+        <a class="text-white text-base uppercase py-2 relative flex items-center" href="blog-archive.html">
+          BLOG
+        </a>
+      </li>
+      <li class="group relative">
+        <a class="text-white text-base uppercase py-2 relative flex items-center" href="contact-us.html">
+          CONTACT US
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="backdrop-popup backdrop-blur-xl bg-primary-dark/70 fixed top-0 start-0 w-full h-full z-[90]"
+    style="display: none"></div>
+  <!-- END-MENU -->
+
+  <!--START-HEADER-->
+  <header class="relative bg-primary-dark bg-cover">
+    <div
+      class="pt-beetwin-section max-lg:!py-5 z-20 relative max-lg:border-b-2 border-solid border-white border-opacity-10">
+      <div class="container flex items-center flex-wrap">
+        <a href="index.html" class="xl:me-24 lg:me-16 max-lg:w-full max-lg:mb-5">
+          <img src="./assets/img/logo.png" class="lg:max-w-[200px] max-w-[180px] max-lg:mx-auto" />
+        </a>
+        <ul class="flex items-center max-lg:hidden">
+          <li class="group px-4 first:ps-0 last:pe-0 relative">
+            <a class="header-navbar-item text-white text-base uppercase py-2 relative block" href="index.html">
+              HOME
+            </a>
+          </li>
+          <li class="group px-4 first:ps-0 last:pe-0 relative">
+            <a class="header-navbar-item text-white text-base uppercase py-2 relative block" href="about-us.html">
+              ABOUT
+            </a>
+          </li>
+          <li class="group px-4 first:ps-0 last:pe-0 relative">
+            <a class="header-navbar-item text-white text-base uppercase py-2 relative block">
+              SERVICES
+            </a>
+
+            <ul
+              class="sub-menu-1 absolute top-full start-0 bg-primary rounded-lg py-1.5 w-[max-content] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all">
+              <li class="group/item relative">
+                <a href="Network-infrastructure.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Network Infrastructure Services and Solutions
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Computer Network Services and Solutions
+                  <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+                <ul
+                  class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all">
+                  <li>
+                    <a href="Consulting-design-implementation.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Consulting, Network Design and Implementation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="NetworkSupport-maintenance.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Network Support and Maintenance
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Voip.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      VoIP
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="group/item relative">
+                <a
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Cyber Security Services and Solutions
+                  <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+                <ul
+                  class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all">
+                  <li>
+                    <a href="Network-security.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Network Security
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Pen-test.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Penetration Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="SOC.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      SOC
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ISMS.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      ISMS
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="group/item relative">
+                <a href="virtualization.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Virtualization Services and Solutions
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a href="cloud.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Cloud Computing
+                </a>
+              </li>
+
+              <li class="group/item relative">
+                <a href="Data-center.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Data Center
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group px-4 first:ps-0 last:pe-0 relative">
+            <a class="header-navbar-item text-white text-base uppercase py-2 relative block">
+              PRODUCTS
+            </a>
+            <ul
+              class="sub-menu-1 absolute top-full start-0 bg-primary rounded-lg py-1.5 w-[max-content] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all">
+              <li class="group/item relative">
+                <a
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Rack
+                  <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+                <ul
+                  class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all">
+                  <li>
+                    <a href="High-Capacity-Distribution-Rack.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      High Capacity Distribution Rack
+                    </a>
+                  </li>
+                  <li>
+                    <a href="DDF-OCDF-DDF-RACK.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      ODF/OCDF/DDF Rack
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ODC-Rack.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      ODC RACK
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="group/item relative">
+                <a
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Ladder
+                  <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+                <ul
+                  class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all">
+                  <li>
+                    <a href="NEC-ladder.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      NEC Ladder
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Siemens-ladder.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Siemens Ladder
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="group/item relative">
+                <a
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Pigtail & Patch Cord Fiber Optic /Adapter
+                  <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+                <ul
+                  class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all">
+                  <li>
+                    <a href="Pigtail-PatchCord.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Pigtail & Patch Cord
+                    </a>
+                  </li>
+                  <li>
+                    <a href="FiberOptic-Adapter.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Fiber Optic Adapter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="FiberOptic-Attenuator.html"
+                      class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium">
+                      Fiber Optic Attenuator
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="group/item relative">
+                <a href="ODF-OCDF-Wallmount.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  ODF/OCDF Wallmount
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+
+              <li class="group/item relative">
+                <a href="ODF-OCDF-Rackmount.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  ODF/OCDF Rackmount
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a href="ODF-DDF-Rackmount.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  ODF/DDF Rackmount
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a href="Continuous-Duct-Rod.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Continuous-Duct Rod
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+
+              <li class="group/item relative">
+                <a href="Fiber-optic-splice-closure.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Fiber Optic Splice Closure
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+
+              <li class="group/item relative">
+                <a href="Splicing-Tools.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Splicing Tools
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a href="Converter.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Converter
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a href="SubDuct-plug.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Sub Duct Plug & Feeder Cabe Entry
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+              <li class="group/item relative">
+                <a href="Other-Products.html"
+                  class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium">
+                  Other Products
+                  <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="group px-4 first:ps-0 last:pe-0 relative">
+            <a class="header-navbar-item text-white text-base uppercase py-2 relative block" href="blog-archive.html">
+              BLOG
+            </a>
+          </li>
+          <li class="group px-4 first:ps-0 last:pe-0 relative">
+            <a class="header-navbar-item text-white text-base uppercase py-2 relative block" href="contact-us.html">
+              CONTACT US
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown py-2 lg:ms-auto max-lg:me-auto">
+          <button type="button" class="dropdown-button">
+            <i class="icon-world dropdown-language-icon"></i>
+            <span class="dropdown-title"> EN </span>
+            <i class="icon-down dropdown-icon"></i>
+            <i class="icon-up dropdown-icon hidden"></i>
+          </button>
+          <div class="dropdown-body hidden">
+            <a href="#" class="dropdown-item"> EN </a>
+            <a href="#" class="dropdown-item"> AR </a>
+          </div>
+        </div>
+        <div class="open-menu-mobile btn-public btn-primary rounded-lg lg:py-2.5 py-1.5 uppercase lg:hidden">
+          Menu
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 py-beetwin-section max-lg:!py-5">
+      <div class="container flex flex-wrap items-center justify-between">
+        <h2 class="title-public title-public-lg me-8 py-1">
+          <b class="title-public-semibold">Blog 1
+        </h2>
+        <div class="flex text-white text-sm font-light py-1">
+          <div class="flex items-center">
+            <span class="shape-public shape-public-secondary h-1/2"></span>
+          </div>
+          <ul class="flex items-center -m-1">
+            <li class="p-1.5">
+              <a href="#" class="text-white hover:text-secondary transition-all font-extralight text-sm">
+                HOME
+              </a>
+            </li>
+            .
+            <li class="p-1.5">
+              <a href="#" class="text-white hover:text-secondary transition-all font-extralight text-sm">
+                PAGES
+              </a>
+            </li>
+            .
+            <li class="p-1.5">
+              <a href="#" class="text-white hover:text-secondary transition-all font-extralight text-sm">
+                BLOG
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--END-HEADER-->
+
+  <!--START-MAIN-->
+
+  <main>
+    <div class="py-beetwin-section">
+      <div class="container">
+        <div>
+          <div class="rounded-lg overflow-hidden shadow-lighter-alpha lg:mb-6 mb-4">
+            <div class="relative">
+              <img src="./assets/img/article-1.png" class="w-full max-h-[400px]" alt="" />
+              <!--   <div
+                    class="bg-white text-dark lg:text-2base text-sm justify-center items-center flex flex-col lg:w-14 w-12 lg:h-14 h-12 absolute bottom-0 start-0 rounded-tr-md"
+                  >
+                    20
+                    <span> AUG </span>
+                  </div>-->
+
+            </div>
+            <div class="lg:p-10 p-4">
+              <h2 class="text-dark lg:font-semibold font-bold lg:text-2xl text-md lg:mb-2 mb-1">
+                Practical Guide to Reducing Human Cyber Risks 2022 - Human
+                Risk Management - Part I
+              </h2>
+
+            </div>
+          </div>
+
+          <p class="text-public text-public-dark lg:mb-6 mb-4">
+            Employees have long been considered the "weakest link" in
+            the cyber security chain of a business or organization, and
+            considering that "human error is still the number one cause
+            of data breaches", we decided to create the first practical
+            guide available through futurewaves.tech .We share it in
+            this context to help improve the security level of
+            organizations and businesses. <br>
+            Even as organizations devote more time and money to addressing
+            human cyber risks, employee-related security incidents will
+            continue to plague businesses in 2022. But why was that? <br />
+            Simply put, many businesses are not doing enough to combat
+            evolving threats. As cybercriminals use more advanced techniques
+            to exploit humans, the traditional path of once-a-year security
+            awareness training to protect today's businesses from the loss
+            of sensitive information, credit damage, and consequences Not
+            enough money. It is not bad to pay attention to some statistical
+            examples to better understand the importance of the issue:
+
+            <br />
+          </p>
+
+          <ul class="text-public text-public-dark lg:mb-6 mb-4 !list-disc p-5">
+            <li>
+              Estimates show that in 2021, a cyber attack will occur every
+              11 seconds.
+            </li>
+            <li>
+              Cyber attacks were predicted to reach $6 trillion in annual
+              losses by 2021, doubling since 2015.
+            </li>
+            <li>
+              The average cost to businesses due to cyber attacks is $3.86
+              million and it takes more than 200 days to identify breaches.
+            </li>
+          </ul>
+          <p class="text-public text-public-dark lg:mb-6 mb-4">
+            The good news is that the solution to improving user security
+            has evolved in recent years through the introduction of Human
+            Risk Management (HRM), offering a much stronger level of
+            protection for businesses of all sizes and sectors.
+            <br />
+            In this practical guide, we discuss why employees are one of the
+            main insider threat factors and how to direct employee culture
+            towards safe behavior in your business.
+          </p>
+
+          <div class="lg:mb-8 mb-6">
+            <h2 class="text-dark lg:font-semibold font-bold lg:text-2xl text-md lg:mb-6 mb-4">
+              Humans - the #1 cause of cyber security breaches
+            </h2>
+            <ul class="text-public text-public-dark lg:mb-6 mb-4 !list-disc p-5">
+              <li>
+                About 90% of data breaches are related to human errors.
+              </li>
+              <li>
+                Negligent employees cause about 62% of security incidents.
+              </li>
+              <li>
+                60% of organizations have more than 20 insider attacks in a
+                year.
+              </li>
+              <li>
+                98% of organizations are vulnerable to internal threats.
+              </li>
+            </ul>
+            <h2 class="text-dark lg:font-semibold font-bold lg:text-2xl text-md lg:mb-6 mb-4">
+              What are the main types of insider threats?
+            </h2>
+            <ul class="text-public text-public-dark lg:mb-6 mb-4 !list-disc p-5">
+              <li>
+                Careless insiders
+                <p class="p-3">
+                  For example, an employee sending the wrong email or
+                  accidentally attaching the wrong file is the most common
+                  threat to your business, accounting for 62% of all
+                  security incidents.
+                </p>
+              </li>
+              <li>
+                Careless insiders with stolen authentication information
+
+                <p class="p-3">
+                  For example, an employee whose username and password are
+                  exposed on the dark web accounts for 25% of all security
+                  incidents.
+                </p>
+              </li>
+              <li>
+                malicious insiders
+
+                <p class="p-3">
+                  For example, employees or former employees with
+                  motivations detrimental to the business, such as a
+                  disgruntled employee who was recently fired, accounted for
+                  13 percent of incidents.
+                </p>
+              </li>
+            </ul>
+            <h2 class="text-dark lg:font-semibold font-bold lg:text-2xl text-md lg:mb-6 mb-4">
+              Why are employees an insider threat?
+            </h2>
+
+            <h2 class="text-dark lg:font-semibold lg:text-2xl text-md lg:mb-6 mb-4 text-orange">
+              Humans make mistakes
+            </h2>
+            <p class="p-3 text-public text-public-dark lg:mb-6 mb-4">
+              We all make mistakes. In fact, 43 percent of employees say
+              they've made a mistake at work that compromised cybersecurity,
+              such as sending the wrong email. The problem is that these
+              types of "small" mistakes can lead to the disclosure of
+              sensitive data and an opportunity for an attacker.
+            </p>
+
+            <h2 class="text-dark lg:font-semibold lg:text-2xl text-md lg:mb-6 mb-4 text-orange">
+              Humans are the target
+            </h2>
+            <p class="p-3 text-public text-public-dark lg:mb-6 mb-4">
+              Much of your business information, including suppliers,
+              contractors, and customers, can be found online. This makes it
+              easy for attackers to impersonate internal and external
+              contacts, and all it takes is one successful trick to put your
+              business at serious risk.
+            </p>
+            <h2 class="text-dark lg:font-semibold lg:text-2xl text-md lg:mb-6 mb-4 text-orange">
+              Humans break the rules
+            </h2>
+            <p class="p-3 text-public text-public-dark lg:mb-6 mb-4">
+              People in any business can break the rules, either maliciously
+              or accidentally. But the vast majority of offenders go beyond
+              violating password policies. Some employees can go so far as
+              to steal company or organization data and sell it on the dark
+              web.
+            </p>
+
+            <h2 class="text-dark lg:font-semibold lg:text-2xl text-md lg:mb-6 mb-4 text-orange">
+              Four key reasons for user data breaches
+            </h2>
+            <ul class="text-public text-public-dark lg:mb-6 mb-4">
+              <li>
+                1. human mistake
+                <p class="p-3 text-public text-public-dark ">
+                  An employee mistake, like a simple typo, can seem small,
+                  but the consequences can be huge. For many businesses, a
+                  breach related to human error results in fines, loss of
+                  customer trust, and loss of access to data.
+                <ul class="text-public text-public-dark ps-8 !list-disc ">
+                  <li>Common ways that high-risk employee behavior can lead to a security incident</li>
+                  <li>Sharing, writing or reusing passwords across multiple accounts</li>
+                  <li>Mishandling of data, such as entering the wrong email recipient or attaching the wrong file</li>
+                  <li>Lack of awareness of common threats, such as phishing emails</li>
+                  <li>Failing to understand that security is the responsibility of all employees, not just a problem for
+                    the IT department</li>
+                </ul>
+                </p>
+              </li>
+            </ul>
+            <ul class="text-public text-public-dark lg:mb-6 mb-4">
+              <li>
+                2. Weakness of users against phishing attacks
+                <p class="p-3 text-public text-public-dark ">
+                  One of the most common ways an employee causes a security breach is by being exposed to a phishing
+                  attack. And with phishing becoming more targeted and sophisticated than ever, it's becoming harder for
+                  employees to detect these attacks.
+                  <br> Some clever techniques attackers use to control your employees:
+
+                <ul class="text-public text-public-dark ps-8 !list-disc ">
+                  <li>Spear phishing is a specific and targeted attack on one or a select number of victims, while
+                    regular phishing attempts to defraud the masses. In spear phishing, fraudsters often use social
+                    engineering and fake emails to target specific people in an organization.</li>
+                  <li>Business Email Compromise: BEC attacks, also known as Business Email Compromise or BEC for short,
+                    are among the growing fraud methods by which hackers spoof the email addresses of high-level
+                    executives and send emails to Employees post and ask them to make financial transactions or disclose
+                    sensitive and important information.</li>
+                  <li>Domain spoofing: Domain spoofing is a form of phishing in which an attacker spoofs the website or
+                    email domain of a well-known business or person in order to trick people into gaining their trust.
+                  </li>
+                </ul>
+                </p>
+              </li>
+            </ul>
+            <ul class="text-public text-public-dark lg:mb-6 mb-4">
+              <li>
+                3. Misuse of employee authentication information
+                <p class="p-3 text-public text-public-dark ">
+                  Employee passwords play a large role in security incidents, with 61% of breaches involving stolen
+                  credentials.
+                  <br> Procedures for misusing employee authentication information:
+
+                <ul class="text-public text-public-dark ps-8 !list-disc ">
+                  <li>The employee uses the same organizational username and password to log in to several third-party
+                    services.</li>
+                  <li>A third-party service encounters a data breach and exposes user information.</li>
+                  <li>User information is sold on the dark web, which attackers can potentially use to gain access to
+                    multiple user accounts. <br>
+                    More than 22 billion records were added to the dark web in 2020. <br>
+                    60% of the information on the dark web can potentially harm companies and organizations.
+
+                  </li>
+                </ul>
+                </p>
+              </li>
+            </ul>
+            <ul class="text-public text-public-dark lg:mb-6 mb-4">
+              <li>
+                4. Lack of security policies and processes
+                <p class="p-3 text-public text-public-dark ">
+                  An organization's information security policies help guide employee behavior in keeping IT systems
+                  secure. Without these policies, employees are less likely to know who to report phishing attacks to or
+                  who has access to sensitive data.
+
+
+                </p>
+              </li>
+            </ul>
+            <h2 class="text-dark lg:font-semibold font-bold lg:text-2xl text-md lg:mb-6 mb-4">
+              How can policies help reduce risk?
+            </h2>
+            <ul class="text-public text-public-dark ps-8 !list-disc ">
+              <li>They protect your organization's critical information by clearly delineating employee security
+                responsibilities.</li>
+              <li>They prevent the unauthorized disclosure, disruption, loss, access, use or alteration of an
+                organization's information assets.</li>
+            </ul>
+            <br>
+            <h2 class="text-dark lg:font-semibold font-bold lg:text-2xl text-md lg:mb-6 mb-4">
+              Human Risk Management
+            </h2>
+            <p class="p-3 text-public text-public-dark ">
+              **Transform your organization's security culture through continuous human risk management (HRM).** <br>
+              As we mentioned, user data breaches are still very common. That's because, traditionally, businesses have
+              focused primarily on securing endpoints, networks and devices, etc., while neglecting their most valuable
+              asset—people. <br>
+              Even with increased attention and investment in security awareness initiatives, such as annual training
+              and phishing simulation campaigns, this alone has not been enough to combat evolving threats. Today's
+              organizations need a modern solution to strengthen their human resources. <br>
+              HRM is a modern solution for empowering employees to combat evolving cyber threats, prevent user-related
+              breaches and help businesses meet today's stringent standards. Human risk management is a new class of
+              user-centric security that enables businesses to understand, mitigate and monitor the cyber risk of their
+              employees. Humans are your strongest line of defense, but cybersecurity awareness training alone won't
+              change user behavior. Human risk management (HRM) is the solution to creating a security-aware workforce.
+              <br>
+              The goal of a "security culture" is to encourage all employees to think and approach security through the
+              same values, and encourage people to follow desirable behaviors that keep employees, customers, and
+              suppliers safe. Building this culture requires several factors including stability, time and effort. Here
+              are some key building blocks for creating a security-aware workforce. <br>
+              Get support from above: <br>
+              Executive support is critical to the success of any human risk management initiative. We don't just mean
+              the CEO sending out emails to everyone—we mean the leadership team showing their full support for the
+              initiative through regular communication with employees, allocating the necessary funds, and creating
+              specific tasks. <br>
+              Treat security as everyone's responsibility: <br>
+              Employees need to understand that cybersecurity is the responsibility of every employee, not just the IT
+              department. Employees have more access to computers and online resources than ever before and are widely
+              seen as an organization's biggest risk. It is important that people understand the importance of working
+              together to achieve cyber security. <br>
+              Consistency and commitment are key: <br>
+              The key to creating and maintaining a security-aware workforce is in the form of continuous and long-term
+              user training, where continuous security awareness training has been proven to reduce the likelihood of
+              employees engaging in threats such as phishing from 60% to 10% in the first year. Gives. <br>
+
+            </p>
+
+            <ul class="text-public text-public-dark ps-8 !list-disc ">
+              <li>Go beyond security awareness training: <p>Security awareness training is a great way to reduce human
+                  cyber risks, with 80% of organizations seeing a reduction in phishing vulnerability when employees are
+                  trained. But to build a resilient workforce against evolving threats, policies must be implemented and
+                  practical assessments, such as phishing simulations, must be conducted regularly.</p>
+              </li>
+              <li>Time, not budget, is the barrier to defeat: <p>According to the SANS 2021 Human Cyber Risk Management
+                  report, 75 percent of security professionals spend less than half of their time on security awareness,
+                  knowing that more education is associated with increased positive behavior change.</p>
+              </li>
+              <li>Strategic alignment is very important: <p>SANS also reports that managers need to make long-term,
+                  strategic investments in human resources, just as they do for other security efforts such as
+                  vulnerability management, incident response or security operations centers.</p>
+              </li>
+            </ul>
+
+          </div>
+          <p class="p-3 text-public text-public-dark ">In the next practical guide, we will explore HRM from the basics
+            to best practices.</p>
+
+
+          <div class="line lg:mb-6 mb-4"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--END-MAIN-->
+
+
+  <!--START-FOOTER-->
+  <footer>
+    <div class="py-beetwin-section bg-primary-dark">
+      <div class="container">
+        <div class="flex flex-wrap items-start lg:-m-14 sm:-m-4 -m-3">
+          <div class="md:w-1/3 sm:w-1/2 w-full lg:p-12  sm:p-4 p-3">
+            <div class="h-[35px] lg:mb-3 mb-1.5">
+              <img src="./assets/img/logo.png" class="lg:max-w-[200px] max-w-[180px]" alt="" />
+            </div>
+            <p class="text-public text-public-dark lg:mb-5 mb-3">
+              Future Waves Co, employing experts and managers with over
+              30 years of experience, aims to provide special products and
+              services in the fields of technology and communications.
+            </p>
+            <ul class="flex items-center -m-1">
+              <li class="p-1">
+                <a href="#"
+                  class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all">
+                  <i class="icon-instagram text-sm"></i>
+                </a>
+              </li>
+              <li class="p-1">
+                <a href="#"
+                  class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all">
+                  <i class="icon-telegram text-sm"></i>
+                </a>
+              </li>
+              <li class="p-1">
+                <a href="#"
+                  class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all">
+                  <i class="icon-twitter text-sm"></i>
+                </a>
+              </li>
+              <li class="p-1">
+                <a href="#"
+                  class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all">
+                  <i class="icon-linkedin text-sm"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/3 sm:w-1/2 w-full lg:p-14 sm:p-4 p-3">
+            <h3 class="h-[35px] lg:mb-3 mb-1.5 text-white text-lg capitalize">
+              Links
+            </h3>
+            <ul class="flex flex-wrap -mx-1.5 -my-0.5">
+              <li class="w-1/2 px-1.5 py-0.5">
+                <a href="about-us.html" class="text-public text-public-dark hover:text-white transition-all block">
+                  About us
+                </a>
+              </li>
+              <li class="w-1/2 px-1.5 py-0.5">
+                <a href="assets/catalog/Catalog.pdf" attributes-list download
+                  class="text-public text-public-dark hover:text-white transition-all block ">
+                  Catalog of Products
+                </a>
+              </li>
+              <li class="w-1/2 px-1.5 py-0.5">
+                <a href="blog-archive.html" class="text-public text-public-dark hover:text-white transition-all block">
+                  Blog
+                </a>
+              </li>
+              <li class="w-1/2 px-1.5 py-0.5">
+                <a href="contact-us.html" class="text-public text-public-dark hover:text-white transition-all block">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/3 sm:w-1/2 w-full lg:p-14 sm:p-4 p-3">
+            <h3 class="h-[35px] lg:mb-3 mb-1.5 text-white text-lg capitalize">
+              Contact Us
+            </h3>
+            <p class="text-public text-public-dark lg:mb-3.5 mb-2">
+              Muscat, Oman
+            </p>
+            <p class="text-public text-public-dark lg:mb-3.5 mb-2">
+              info@futurewaves.tech
+            </p>
+            <p class="text-public text-public-dark">+968 9208 7002</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-6 bg-primary-dark-alpha">
+      <div class="container md:flex justify-between items-center">
+        <p class="text-sm text-darker font-extralight max-md:mb-2">
+          © Copyrights, 2023 All Right Reserved For Future Waves Group
+        </p>
+        <p class="text-sm text-darker font-extralight">
+          <a href="#" class="hover:text-white"> Terms & Condition </a>
+          /
+          <a href="#" class="hover:text-white"> Privacy Policy </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--END-FOOTER-->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/Select2/select2.min.js"></script>
+  <script src="assets/js/swiper/swiper.min.js"></script>
+  <script src="assets/js/public.js"></script>
+  <script src="assets/js/blog-single.js"></script>
+</body>
+
+</html>

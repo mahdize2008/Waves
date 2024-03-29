@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ISMS</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- SATRT-MENU -->
+    <div
+      class="menu-modal fixed top-0 start-0 h-full w-[270px] bg-primary-dark z-[99] p-4 overflow-y-auto"
+      style="display: none"
+    >
+      <div
+        class="flex items-center justify-between pb-4 mb-4 border-b-2 border-solid border-white border-opacity-10"
+      >
+        <a href="">
+          <img src="./assets/img/logo.png" class="max-w-[150px]" />
+        </a>
+        <div class="close-menu-modal btn-public btn-primary-light uppercase">
+          close
+        </div>
+      </div>
+      <ul class="block">
+        <li class="group relative">
+          <a
+            class="text-white text-base uppercase py-2 relative flex items-center"
+            href="index.html"
+          >
+            HOME
+          </a>
+        </li>
+        <li class="group relative">
+          <a
+            class="text-white text-base uppercase py-2 relative flex items-center"
+            href="about-us.html"
+          >
+            ABOUT
+          </a>
+        </li>
+        <li class="group relative">
+          <a
+            class="text-white text-base uppercase py-2 relative flex items-center"
+          >
+            SERVICES
+            <i
+              class="icon-down w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto block group-hover:hidden"
+            ></i>
+            <i
+              class="icon-up w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto hidden group-hover:flex"
+            ></i>
+          </a>
+          <ul
+            class="sub-menu-1 relative transition-all ps-8 hidden group-hover:block bg-primary-dark-alpha -mx-4"
+          >
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Network-infrastructure.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Network Infrastructure Services and Solutions
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Computer Network Services and Solutions
+              </a>
+              <ul class="sub-menu-2 relative ps-4 ms-2">
+                <li class="!list-disc text-white">
+                  <a
+                    href="Consulting-design-implementation.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Consulting, Network Design and Implementation
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="NetworkSupport-maintenance.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Network Support and Maintenance
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="Voip.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    VoIP
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Cyber Security Services and Solutions
+              </a>
+              <ul class="sub-menu-2 relative ps-4 ms-2">
+                <li class="!list-disc text-white">
+                  <a
+                    href="Network-security.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Network Security
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="Pen-test.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Penetration Test
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="SOC.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    SOC
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="ISMS.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    ISMS
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="virtualization.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Virtualization Services and Solutions
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white">
+              <a
+                href="cloud.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Cloud Computing
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Data-center.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Data Center
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a
+            class="text-white text-base uppercase py-2 relative flex items-center"
+          >
+            PRODUCTS
+            <i
+              class="icon-down w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto block group-hover:hidden"
+            ></i>
+            <i
+              class="icon-up w-6 h-6 rounded-md bg-white bg-opacity-5 flex items-center justify-center text-white text-[8px] font-bold ms-auto hidden group-hover:flex"
+            ></i>
+          </a>
+          <ul
+            class="sub-menu-1 relative transition-all ps-8 hidden group-hover:block bg-primary-dark-alpha -mx-4"
+          >
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Rack
+              </a>
+              <ul class="sub-menu-2 relative ps-4 ms-2">
+                <li class="!list-disc text-white">
+                  <a
+                    href="High-Capacity-Distribution-Rack.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    High Capacity Distribution Rack
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="DDF-OCDF-DDF-RACK.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    ODF/OCDF/ DDF Rack
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="ODC-Rack.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    ODC RACK
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Ladder
+              </a>
+              <ul class="sub-menu-2 relative ps-4 ms-2">
+                <li class="!list-disc text-white">
+                  <a
+                    href="NEC-ladder.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    NEC Ladder
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="Siemens-ladder.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Siemens Ladder
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Pigtail & Patch Cord Fiber Optic /Adapter
+              </a>
+              <ul class="sub-menu-2 relative ps-4 ms-2">
+                <li class="!list-disc text-white">
+                  <a
+                    href="Pigtail-PatchCord.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Pigtail & Patch Cord
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="FiberOptic-Adapter.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Fiber Optic Adapter
+                  </a>
+                </li>
+                <li class="!list-disc text-white">
+                  <a
+                    href="FiberOptic-Attenuator.html"
+                    class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+                  >
+                    Fiber Optic Attenuator
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="ODF-OCDF-Wallmount.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                ODF/OCDF Wallmount
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="ODF-OCDF-Rackmount.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                ODF/OCDF Rackmount
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="ODF-DDF-Rackmount.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                ODF/DDF Rackmount
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Continuous-Duct-Rod.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Continuous-Duct Rod
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Fiber-optic-splice-closure.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Fiber Optic Splice Closure
+              </a>
+            </li>
+
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Splicing-Tools.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Splicing Tools
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Converter.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Converter
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="SubDuct-plug.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Sub Duct Plug & Feeder Cabe Entry
+              </a>
+            </li>
+            <li class="group/item relative !list-disc text-white mb-3">
+              <a
+                href="Other-Products.html"
+                class="text-sm text-white transition-all !flex items-center py-1.5 block font-medium"
+              >
+                Other Products
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a
+            class="text-white text-base uppercase py-2 relative flex items-center"
+            href="blog-archive.html"
+          >
+            BLOG
+          </a>
+        </li>
+        <li class="group relative">
+          <a
+            class="text-white text-base uppercase py-2 relative flex items-center"
+            href="contact-us.html"
+          >
+            CONTACT US
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="backdrop-popup backdrop-blur-xl bg-primary-dark/70 fixed top-0 start-0 w-full h-full z-[90]"
+      style="display: none"
+    ></div>
+    <!-- END-MENU -->
+
+    <!--START-HEADER-->
+    <header class="relative bg-primary-dark bg-cover">
+      <div
+        class="pt-beetwin-section max-lg:!py-5 z-20 relative max-lg:border-b-2 border-solid border-white border-opacity-10"
+      >
+        <div class="container flex items-center flex-wrap">
+          <a
+            href="index.html"
+            class="xl:me-24 lg:me-16 max-lg:w-full max-lg:mb-5"
+          >
+            <img
+              src="./assets/img/logo.png"
+              class="lg:max-w-[200px] max-w-[180px] max-lg:mx-auto"
+            />
+          </a>
+          <ul class="flex items-center max-lg:hidden">
+            <li class="group px-4 first:ps-0 last:pe-0 relative">
+              <a
+                class="header-navbar-item text-white text-base uppercase py-2 relative block"
+                href="index.html"
+              >
+                HOME
+              </a>
+            </li>
+            <li class="group px-4 first:ps-0 last:pe-0 relative">
+              <a
+                class="header-navbar-item text-white text-base uppercase py-2 relative block"
+                href="about-us.html"
+              >
+                ABOUT
+              </a>
+            </li>
+            <li class="group px-4 first:ps-0 last:pe-0 relative">
+              <a
+                class="header-navbar-item text-white text-base uppercase py-2 relative block"
+              >
+                SERVICES
+              </a>
+
+              <ul
+                class="sub-menu-1 absolute top-full start-0 bg-primary rounded-lg py-1.5 w-[max-content] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all"
+              >
+                <li class="group/item relative">
+                  <a
+                    href="Network-infrastructure.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Network Infrastructure Services and Solutions
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Computer Network Services and Solutions
+                    <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                  <ul
+                    class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all"
+                  >
+                    <li>
+                      <a
+                        href="Consulting-design-implementation.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Consulting, Network Design and Implementation
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="NetworkSupport-maintenance.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Network Support and Maintenance
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="Voip.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        VoIP
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Cyber Security Services and Solutions
+                    <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                  <ul
+                    class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all"
+                  >
+                    <li>
+                      <a
+                        href="Network-security.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Network Security
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="Pen-test.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Penetration Test
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="SOC.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        SOC
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="ISMS.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        ISMS
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="virtualization.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Virtualization Services and Solutions
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="cloud.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Cloud Computing
+                  </a>
+                </li>
+
+                <li class="group/item relative">
+                  <a
+                    href="Data-center.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Data Center
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group px-4 first:ps-0 last:pe-0 relative">
+              <a
+                class="header-navbar-item text-white text-base uppercase py-2 relative block"
+              >
+                PRODUCTS
+              </a>
+              <ul
+                class="sub-menu-1 absolute top-full start-0 bg-primary rounded-lg py-1.5 w-[max-content] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all"
+              >
+                <li class="group/item relative">
+                  <a
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Rack
+                    <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                  <ul
+                    class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all"
+                  >
+                    <li>
+                      <a
+                        href="High-Capacity-Distribution-Rack.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        High Capacity Distribution Rack
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="DDF-OCDF-DDF-RACK.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        ODF/OCDF/DDF Rack
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="ODC-Rack.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        ODC RACK
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Ladder
+                    <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                  <ul
+                    class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all"
+                  >
+                    <li>
+                      <a
+                        href="NEC-ladder.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        NEC Ladder
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="Siemens-ladder.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Siemens Ladder
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Pigtail & Patch Cord Fiber Optic /Adapter
+                    <i class="icon-right font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                  <ul
+                    class="sub-menu-2 absolute top-0 start-full bg-primary-alpha rounded-lg py-1.5 w-[max-content] border-2 border-solid border-primary border-opacity-20 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 transition-all"
+                  >
+                    <li>
+                      <a
+                        href="Pigtail-PatchCord.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Pigtail & Patch Cord
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="FiberOptic-Adapter.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Fiber Optic Adapter
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="FiberOptic-Attenuator.html"
+                        class="text-sm text-white transition-all !flex items-center hover:text-white hover:bg-primary px-3 py-1.5 block font-medium"
+                      >
+                        Fiber Optic Attenuator
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="ODF-OCDF-Wallmount.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    ODF/OCDF Wallmount
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+
+                <li class="group/item relative">
+                  <a
+                    href="ODF-OCDF-Rackmount.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    ODF/OCDF Rackmount
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="ODF-DDF-Rackmount.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    ODF/DDF Rackmount
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="Continuous-Duct-Rod.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Continuous-Duct Rod
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+
+                <li class="group/item relative">
+                  <a
+                    href="Fiber-optic-splice-closure.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Fiber Optic Splice Closure
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+
+                <li class="group/item relative">
+                  <a
+                    href="Splicing-Tools.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Splicing Tools
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="Converter.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Converter
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="SubDuct-plug.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Sub Duct Plug & Feeder Cabe Entry
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+                <li class="group/item relative">
+                  <a
+                    href="Other-Products.html"
+                    class="text-sm text-white transition-all !flex items-center group-hover/item:text-white group-hover/item:bg-primary-alpha px-3 py-1.5 block font-medium"
+                  >
+                    Other Products
+                    <i class="font-bold ms-auto ps-4 text-[8px]"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group px-4 first:ps-0 last:pe-0 relative">
+              <a
+                class="header-navbar-item text-white text-base uppercase py-2 relative block"
+                href="blog-archive.html"
+              >
+                BLOG
+              </a>
+            </li>
+            <li class="group px-4 first:ps-0 last:pe-0 relative">
+              <a
+                class="header-navbar-item text-white text-base uppercase py-2 relative block"
+                href="contact-us.html"
+              >
+                CONTACT US
+              </a>
+            </li>
+          </ul>
+          <div class="dropdown py-2 lg:ms-auto max-lg:me-auto">
+            <button type="button" class="dropdown-button">
+              <i class="icon-world dropdown-language-icon"></i>
+              <span class="dropdown-title"> EN </span>
+              <i class="icon-down dropdown-icon"></i>
+              <i class="icon-up dropdown-icon hidden"></i>
+            </button>
+            <div class="dropdown-body hidden">
+              <a href="#" class="dropdown-item"> EN </a>
+              <a href="#" class="dropdown-item"> AR </a>
+            </div>
+          </div>
+          <div
+            class="open-menu-mobile btn-public btn-primary rounded-lg lg:py-2.5 py-1.5 uppercase lg:hidden"
+          >
+            Menu
+          </div>
+        </div>
+      </div>
+      <div class="relative z-10 py-beetwin-section max-lg:!py-5">
+        <div class="container flex flex-wrap items-center justify-between">
+          <h2 class="title-public title-public-lg me-8 py-1">
+            <b class="title-public-semibold" style="font-weight: 400"
+              >Information security management system services - ISMS</b
+            >
+          </h2>
+          <div class="flex text-white text-sm font-light py-1">
+            <div class="flex items-center">
+              <span class="shape-public shape-public-secondary h-1/2"></span>
+            </div>
+            <ul class="flex items-center -m-1">
+              <li class="p-1.5">
+                <a
+                  href="#"
+                  class="text-white hover:text-secondary transition-all font-extralight text-sm"
+                >
+                  HOME
+                </a>
+              </li>
+              .
+              <li class="p-1.5">
+                <a
+                  href="#"
+                  class="text-white hover:text-secondary transition-all font-extralight text-sm"
+                >
+                  PAGES
+                </a>
+              </li>
+              .
+              <li class="p-1.5">
+                <a
+                  href="#"
+                  class="text-white hover:text-secondary transition-all font-extralight text-sm"
+                >
+                  SERVICES
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--END-HEADER-->
+
+    <!--START-MAIN-->
+    <main>
+      <!-- START-INFORMATION -->
+      <div class="py-beetwin-section">
+        <div class="container">
+          <div class="flex flex-wrap items-center xl:-m-10 lg:-m-6 -m-4">
+            <div class="lg:w-1/2 w-full xl:p-10 lg:p-6 p-4">
+              <div class="subtitle-public">
+                <span class="warning-shape"></span>
+                Get to Know Services
+              </div>
+              <h2 class="header-section">
+                <b> Information security management system services - ISMS</b>
+              </h2>
+              <p class="text-public text-public-dark mb-6">
+                In today's world, information is the most key asset and capital
+                for the growth and success of any organization. In order to
+                ensure the information security of this essential capital, an
+                information security management system (ISMS) has been prepared.
+                In order to implement ISMS, a standard has been provided by ISO
+                27001:2005. <br /><br />
+              </p>
+              <span class="text-public text-public-dark mb-6">
+                Advantages of information security management system:</span
+              >
+              <ul class="text-public text-public-dark p-4 !list-disc">
+                <li class="p-2">
+                  Helping to prepare an operational plan for the security of the
+                  information exchange space in organizations
+                </li>
+                <li class="p-2">
+                  Providing security at all levels, including physical,
+                  personnel, and communication security
+                </li>
+                <li class="p-2">The latest information security standard</li>
+                <li class="p-2">
+                  Increasing the image and credibility of the organization
+                </li>
+                <li class="p-2">
+                  Dynamic and continuous security management system
+                </li>
+                <li class="p-2">Preventive approach</li>
+                <li class="p-2">Comprehensive look at security</li>
+                <li class="p-2">Personnel training approach</li>
+                <li class="p-2">Reduction in costs</li>
+              </ul>
+            </div>
+            <div
+              class="lg:w-1/2 w-full xl:p-10 lg:p-6 p-4 relative max-lg:-order-1"
+            >
+              <img
+                src="./assets/img/Services-img/security/isms/1.png"
+                class="w-full max-h-[600px] rounded-md overflow-hiddene"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END-INFORMATION -->
+
+      <!-- START-INFORMATION -->
+      <div class="mb-beetwin-section">
+        <div class="container">
+          <div class="flex flex-wrap items-center xl:-m-10 lg:-m-6 -m-4">
+            <div class="lg:w-1/2 w-full xl:p-10 lg:p-6 p-4 relative">
+              <img
+                src="./assets/img/Services-img/security/isms/3.jpg"
+                class="w-full max-h-[600px] rounded-md overflow-hiddene"
+                alt=""
+              />
+            </div>
+            <div class="lg:w-1/2 w-full xl:p-10 lg:p-6 p-4">
+              <strong
+                class="text-public text-public-dark"
+                style="font-size: larger; font-weight: 600"
+              >
+                Preparation of RFP (Request for Proposal) for
+                organizations</strong
+              >
+
+              <p class="text-public text-public-dark p-2">
+                In order to choose a competent consultant for the implementation
+                of the information security management system (ISMS),
+                organizations need to prepare a suitable RFP in the field of
+                ISMS. In order to prepare a suitable RFP in this field, a proper
+                understanding of the organization's security needs from the
+                point of view of ISMS and related standards is required. Future
+                Waves has the necessary know-how to prepare suitable RFP for all
+                organizations.
+              </p>
+              <br />
+              <strong
+                class="text-public text-public-dark"
+                style="font-size: larger; font-weight: 600"
+                >Information security management system design</strong
+              >
+              <p class="text-public text-public-dark p-2">
+                Future Waves experts, in order to design information security
+                management in the organization, first create a suitable culture
+                in the organization which includes training and informing the
+                personnel in this field, then it strives to know the
+                organization and the current security status of the organization
+                until an ideal status is reached. <br /><br />
+                After this stage, risk assessment is done to identify risks for
+                each asset, and then appropriate controls are selected to
+                minimize the risks. The output of this service will be the
+                provision of a security plan in the field of information
+                security management system to the organization.
+              </p>
+              <br />
+              <strong
+                class="text-public text-public-dark"
+                style="font-size: larger; font-weight: 600"
+                >Implementation of information security management
+                system</strong
+              >
+              <p class="text-public text-public-dark p-2">
+                In order to implement the information security management system
+                in the organization, the ISMS experts and the technical experts
+                of Future Waves are working together to implement the security
+                plan in the organization. This implementation will be based on
+                all clauses and controls in the information security management
+                system standards. Regarding the technical implementation of
+                electronic information security, which is a part of the security
+                plan, more comprehensive explanations are given in the next
+                sections. After the implementation, in order to solve the
+                possible problems, the internal auditors and also the
+                penetration testing experts of Future Waves examine the
+                implemented system and provide a report to the implementation
+                team to solve the known problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END-INFORMATION -->
+    </main>
+
+    <!--END-MAIN-->
+
+ 
+    <!--START-FOOTER-->
+    <footer>
+      <div class="py-beetwin-section bg-primary-dark">
+        <div class="container">
+          <div class="flex flex-wrap items-start lg:-m-14 sm:-m-4 -m-3">
+            <div class="md:w-1/3 sm:w-1/2 w-full lg:p-12  sm:p-4 p-3">
+              <div class="h-[35px] lg:mb-3 mb-1.5">
+                <img
+                  src="./assets/img/logo.png"
+                  class="lg:max-w-[200px] max-w-[180px]"
+                  alt=""
+                />
+              </div>
+              <p class="text-public text-public-dark lg:mb-5 mb-3"  >
+                Future Waves Co, employing experts and managers with over
+                30 years of experience, aims to provide special products and
+                services in the fields of technology and communications.
+              </p>
+              <ul class="flex items-center -m-1">
+                <li class="p-1">
+                  <a
+                    href="#"
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all"
+                  >
+                    <i class="icon-instagram text-sm"></i>
+                  </a>
+                </li>
+                <li class="p-1">
+                  <a
+                    href="#"
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all"
+                  >
+                    <i class="icon-telegram text-sm"></i>
+                  </a>
+                </li>
+                <li class="p-1">
+                  <a
+                    href="#"
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all"
+                  >
+                    <i class="icon-twitter text-sm"></i>
+                  </a>
+                </li>
+                <li class="p-1">
+                  <a
+                    href="#"
+                    class="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-primary transition-all"
+                  >
+                    <i class="icon-linkedin text-sm"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="md:w-1/3 sm:w-1/2 w-full lg:p-14 sm:p-4 p-3">
+              <h3 class="h-[35px] lg:mb-3 mb-1.5 text-white text-lg capitalize">
+                Links
+              </h3>
+              <ul class="flex flex-wrap -mx-1.5 -my-0.5">
+                <li class="w-1/2 px-1.5 py-0.5">
+                  <a
+                    href="about-us.html"
+                    class="text-public text-public-dark hover:text-white transition-all block"
+                  >
+                    About us
+                  </a>
+                </li>
+                <li class="w-1/2 px-1.5 py-0.5">
+                  <a
+                    href="assets/catalog/Catalog.pdf"
+                    attributes-list
+                    download
+                    class="text-public text-public-dark hover:text-white transition-all block "
+                  >
+                    Catalog of Products
+                  </a>
+                </li>
+                <li class="w-1/2 px-1.5 py-0.5">
+                  <a
+                    href="blog-archive.html"
+                    class="text-public text-public-dark hover:text-white transition-all block"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li class="w-1/2 px-1.5 py-0.5">
+                  <a
+                    href="contact-us.html"
+                    class="text-public text-public-dark hover:text-white transition-all block"
+                  >
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="md:w-1/3 sm:w-1/2 w-full lg:p-14 sm:p-4 p-3">
+              <h3 class="h-[35px] lg:mb-3 mb-1.5 text-white text-lg capitalize">
+                Contact Us
+              </h3>
+              <p class="text-public text-public-dark lg:mb-3.5 mb-2">
+                Muscat, Oman
+              </p>
+              <p class="text-public text-public-dark lg:mb-3.5 mb-2">
+                info@futurewaves.tech
+              </p>
+              <p class="text-public text-public-dark">+968 9208 7002</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-6 bg-primary-dark-alpha">
+        <div class="container md:flex justify-between items-center">
+          <p class="text-sm text-darker font-extralight max-md:mb-2">
+            © Copyrights, 2023 All Right Reserved For Future Waves Group
+          </p>
+          <p class="text-sm text-darker font-extralight">
+            <a href="#" class="hover:text-white"> Terms & Condition </a>
+            /
+            <a href="#" class="hover:text-white"> Privacy Policy </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--END-FOOTER-->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/public.js"></script>
+  </body>
+</html>
